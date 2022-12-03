@@ -10,7 +10,7 @@ function getCheckedValue(radioName) {
 
 function dateAndTime() {
 	outputObj = document.getElementByID("date");
-	const d = get Date();
+	const d = getDate();
 	dayMonth = d.getDate();
 	var input = parseInt(prompt("What day of the month is your assignment due?: "));
 	var newDay = dayMonth - input;
