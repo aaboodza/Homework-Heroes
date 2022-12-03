@@ -1,0 +1,29 @@
+{
+  "name": "homeworkheroes",
+  "version": "1.0.0",
+  "description": "This is a one-stop learning platform for all your learning needs. With integrated online lessons, quizzes/tests, and instant feedback, and other materials, there is an abundance of information readily available at your fingertips, all for free! You will be well prepared.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaboodza/Homework-Heroes.git"
+  },
+  "keywords": [
+    "learn4life"
+  ],
+  "author": "homeworkheroes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaboodza/Homework-Heroes/issues"
+  },
+  "homepage": "https://github.com/aaboodza/Homework-Heroes#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.1.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
