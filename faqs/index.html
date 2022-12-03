@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/responsive.css">
-
   <script src="index.js"></script>
   <style>
     .row {
@@ -31,36 +30,40 @@
 
 <body class="w3-theme-l5">
   <!-- Navbar -->
+  <!-- Navbar -->
   <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
-    <a href="#" class="w3-bar-item">
+    <a href="../index.html" class="w3-bar-item">
       <img src="../images/logo.png" style=" max-height:45px !important;" alt="Logo">
     </a>
-    <a href="../profile/index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+    <a href="../profile/index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
+      title="My Account">
       <img src="https://www.w3schools.com/w3images/avatar2.png" class="w3-circle"
         style="height:40px;width:40px; margin-top: -9px;" alt="Avatar">
       <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2"
         href="javascript:void(0);" onclick="openNav()">
         <i class="fa fa-bars"></i>
       </a>
-      <a href="faq/index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="FAQ"> FAQ
+      <a href="../faq/index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
+        title="FAQ"> FAQ </a>
+      <a href="../contact/index.html"
+        class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="CONTACT"> CONTACT
       </a>
-      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="CONTACT">
-        CONTACT </a>
+      <a href="../virtual/index.html"
+        class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="CONTACT"> VIRTUAL
+        TOUR </a>
       <div class="w3-dropdown-hover w3-right">
-        <a href="index.html"
+        <a href="#"
           class=".w3-white, .w3-hover-white:hover w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white w3-dropdown-hover w3-hide-small"
           title="COURSES"> COURSES </a>
         <div class="w3-dropdown-content w3-card-4 w3-bar-block w3-hover-white:hover"
           style="width:300px; margin-top: 3.702%;">
-          <a href="#" class="w3-bar-item w3-button">BROWSE COURSES</a>
-          <a href="#" class="w3-bar-item w3-button">BROWSE LESSONS</a>
-          <a href="#" class="w3-bar-item w3-button">BROWSE TESTS</a>
+          <a href="../courses/index.html" class="w3-bar-item w3-button">BROWSE COURSES</a>
+          <a href="#" class="w3-bar-item w3-button">GRADES</a>
         </div>
       </div>
       <a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
         title="HOME"> HOME </a>
     </a>
-  </div>
   </div>
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
@@ -77,92 +80,99 @@
     <br>
     <p style="text-align:center">
       <br>
-      <span class="w3-xlarge">Have questions? We're here to help.<br>
+      <span class="w3-xlarge">Have questions? We're here to help. <br>
         <br>
     </p>
     <br>
-
-        <button type="button" class="collapsible">Question 1</button>
-        <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <button type="button" class="collapsible">Question 2</button>
-        <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <button type="button" class="collapsible">Question 3</button>
-        <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <button type="button" class="collapsible">Question 4</button>
-        <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <button type="button" class="collapsible">Question 5</button>
-        <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-
-        <script>
-        var coll = document.getElementsByClassName("collapsible");
-
-        for (let i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-            content.style.display = "none";
-            } else {
-            content.style.display = "block";
-            }
-        });
-        }
-        </script>
-
-        <style>
-            .collapsible {
-            background-color: white;
-            color: #73c007;
-            font-weight: bold;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 15px;
-            border-top: 1px solid lightgray;
-            border-bottom: 1px solid lightgray;
-            }
-
-            .collapsible:hover {
-            background-color: lightgray;
-            }
-            
-            .active, .collapsible:hover {
-            border-bottom: none;
-            }
-            
-            .content {
-            padding: 0 18px;
-            display: none;
-            overflow: hidden;
-            background-color: white;
-            }
-
-            .collapsible:after {
-            content: '\002b'; 
-            color:#73c007;
-            font-size: 20px;
-            float: right;
-            margin-left: 5px;
-            }
-
-            .active:after {
-            content: "\2212"; 
-            }
-        </style>
+    <button type="button" class="collapsible">Question 1</button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
     </div>
+    <button type="button" class="collapsible">Question 2</button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+    <button type="button" class="collapsible">Question 3</button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+    <button type="button" class="collapsible">Question 4</button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+    <button type="button" class="collapsible">Question 5</button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      for (let i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+    <style>
+      .collapsible {
+        background-color: white;
+        color: #73c007;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+      }
+
+      .collapsible:hover {
+        background-color: lightgray;
+      }
+
+      .active,
+      .collapsible:hover {
+        border-bottom: none;
+      }
+
+      .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: white;
+      }
+
+      .collapsible:after {
+        content: '\002b';
+        color: #73c007;
+        font-size: 20px;
+        float: right;
+        margin-left: 5px;
+      }
+
+      .active:after {
+        content: "\2212";
+      }
+    </style>
+  </div>
   <!-- Footer Start -->
   <footer class="footer-area" style="margin-top: -10%;">
     <div class="main-footer">
@@ -171,7 +181,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="single-widget pr-60">
               <div class="footer-logo pb-25">
-                <a href="index.html">
+                <a href="../index.html">
                   <img src="../images/logo.png" alt="Learn4Life">
                 </a>
               </div>
@@ -185,13 +195,13 @@
               <h3>information</h3>
               <ul>
                 <li>
-                  <a href="#">About Us</a>
+                  <a href="../index.html">About Us</a>
                 </li>
                 <li>
-                  <a href="#">Contact Us</a>
+                  <a href="../contact/index.html">Contact Us</a>
                 </li>
                 <li>
-                  <a href="event.html">Github repo</a>
+                  <a href="https://github.com/aaboodza/Homework-Heroes.git">Github repo</a>
                 </li>
                 <li>
                   <a href="#">Watch Our Video</a>
@@ -207,19 +217,19 @@
               <h3>useful links</h3>
               <ul>
                 <li>
-                  <a href="courses/index.html">Browse Courses</a>
+                  <a href="../courses/index.html">Browse Courses</a>
                 </li>
                 <li>
-                  <a href="about.html">Browse Lessons</a>
+                  <a href="../profile/index.html">Account</a>
                 </li>
                 <li>
-                  <a href="teacher.html">Browse Tests and Grades</a>
+                  <a href="#">Grades</a>
                 </li>
                 <li>
-                  <a href="#">Virtual Classroom</a>
+                  <a href="../virtual/index.html">Virtual Classroom</a>
                 </li>
                 <li>
-                  <a href="event.html">Calendar</a>
+                  <a href="../profile/index.html">Calendar</a>
                 </li>
               </ul>
             </div>
@@ -239,7 +249,7 @@
     <div class="footer-bottom text-center">
       <div class="container">
         <p>Copyright © 2022, <a href="index.html"></a>
-          <a href="#" target="_blank">Homework Heroes</a>
+          <a href="../index.html" target="_blank">Homework Heroes</a>
         </p>
       </div>
     </div>
