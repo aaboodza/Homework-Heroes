@@ -8,6 +8,15 @@ function getCheckedValue(radioName) {
 		if (radios[y].checked) return radios[y].value;
 }
 
+function dateAndTime() {
+	outputObj = document.getElementByID("date");
+	const d = get Date();
+	dayMonth = d.getDate();
+	var input = parseInt(prompt("What day of the month is your assignment due?: "));
+	var newDay = dayMonth - input;
+	outputObj.innerHTML= "Your assignment is due " + newDay + "days from now.";
+}
+
 function getScore() {
 	var score = 0;
 	for (var i = 0; i < tot; i++)
