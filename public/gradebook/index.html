@@ -2,92 +2,29 @@
 <html>
 
 <head>
-  <title>Virtual Tour | Lab</title>
+  <title>Learn4Life | Grade Book</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
-
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="style.css">
 
-  <style>
-    .row {
-      margin-top: -10% !important;
-      --bs-gutter-x: 1.5rem;
-      --bs-gutter-y: 0;
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: calc(-1 * var(--bs-gutter-y));
-    }
-
-    .single-widget p {
-      color: #fff;
-    }
-
-    .single-widget h3,
-    a {
-      color: #fff;
-    }
-
-    .single-widget h3::after {
-      background: #ffffff none repeat scroll 0 0;
-    }
-
-    .single-widget h3::before {
-      background: #ffffff none repeat scroll 0 0;
-    }
-
-    .footer-bottom {
-      background-color: #000000;
-    }
-
-    .single-post-img a:after {
-      display: none;
-    }
-
-    .single-blog-widget ul li:hover a {
-      color: #73c007;
-    }
-
-    a:hover {
-      color: #73c007;
-    }
-
-    .logo-anchor {
-      display: none !important;
-    }
-
-    .default-btn {
-      color: #fff;
-      display: inline-block;
-      font-family: "Open Sans", sans-serif;
-      font-size: 16px;
-      font-weight: 700;
-      overflow: hidden;
-      padding: 8px 25px 9px;
-      position: relative;
-      text-transform: uppercase;
-      z-index: 9;
-      background: #73c007;
-    }
-
-    .default-btn:hover {
-      background: #73c007;
-      color: #fff;
-    }
-  </style>
+  <script src="index.js"></script>
+  <script src="grade.js"></script>
+  <script src="../courses/css/tests/index.js"></script>
+  <script src="../courses/html/tests/index.js"></script>
+  <script src="../courses/javascript/tests/index.js"></script>
+ 
 </head>
 
 <body class="w3-theme-l5">
-
   <!-- Navbar -->
-  <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+   <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
     <a href="../index.html" class="w3-bar-item">
       <img src="../images/logo.png" style=" max-height:45px !important;" alt="Logo">
     </a>
@@ -101,12 +38,10 @@
       </a>
       <a href="../faq/index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
         title="FAQ"> FAQ </a>
-      <a href="../contact/index.html"
-        class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="CONTACT"> CONTACT
-      </a>
-      <a href="../virtual/index.html"
-        class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="CONTACT"> VIRTUAL
-        TOUR </a>
+      <a href="../contact/index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
+        title="CONTACT"> CONTACT </a>
+      <a href="../virtual/index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
+        title="CONTACT"> VIRTUAL TOUR </a>
       <div class="w3-dropdown-hover w3-right">
         <a href="#"
           class=".w3-white, .w3-hover-white:hover w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white w3-dropdown-hover w3-hide-small"
@@ -121,62 +56,63 @@
         title="HOME"> HOME </a>
     </a>
   </div>
-
-  <!-- Virtual Tour Start -->
-  <div class="courses-details-area blog-area pt-150 pb-140">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <div class="courses-details">
-            <h1>Virtual Tour: Lab</h1>
-            <br>
-            <iframe
-              src="https://momento360.com/e/u/c3d408384f024224b2876ca07800a604?utm_campaign=embed&utm_source=other&heading=-28.4&pitch=36.32&field-of-view=75&size=medium"
-              width="100%" height="400px"></iframe>
-            <div class="course-details-content">
-              <h2>Description</h2>
-              <p>WAC Labs and facilities on the Keele Campus are available to all students.</p>
-              <br>
-              <br>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="blog-sidebar right">
-            <div class="single-blog-widget mb-50">
-              <h3 style="font-weight: bold;">Virtual Tours</h3>
-              <ul>
-                <li>
-                  <a href="index.html">WAC Lab</a>
-                </li>
-                <li>
-                  <a href="building.html">William Small Centre</a>
-                </li>
-              </ul>
-            </div>
-            <div class="single-blog-widget mb-50">
-              <h3>ONLINE COURSES</h3>
-              <div class="single-post mb-30">
-                <div class="single-post-img">
-                  <a href="blog-details.html">
-                    <img src="https://cdn-icons-png.flaticon.com/512/346/346419.png" alt="courses"
-                      style="height: 42px; width:42px;">
-                  </a>
-                </div>
-                <div class="single-post-content">
-                  <h4>
-                    <a href="../tests/index.html">View Courses</a>
-                  </h4>
-                  <p>3 Available!</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
   </div>
+  <!-- Page Container -->
+  <div class="row">
+    <h1 class="w3-xxxlarge w3-text-green" style="text-align:center">
+      <b>Grades</b>
+    </h1>
+    <br>
+    <p style="text-align:center">
+      <br>
+      <span class="w3-xlarge">You can download your official transcript here<br>
+        <br>
+        <button onclick="" class="convert">Download PDF</button><br>
+        <br>
+    </p>
+    <br>
+    <div style= "height: 320px; overflow-y: scroll;">
+        <div class="grade-list" >
+        <h5>HTML</h5>
+            <input type="button" onclick="saveGrade()" class="collapsible" style="text-indent:20px" value="Test 1"></input>
+                <div class="content">
+                <p style="margin-left:20px" id="score1">Grade: </p>
+                </div>
+        <h5>CSS</h5>
+            <input type="button" onclick="saveGrade()" class="collapsible" style="text-indent:20px" value="Test 1"></input>
+                <div class="content">
+                <p style="margin-left:20px" id="score2">Grade: </p>
+                </div>
+        <h5>JAVASCRIPT</h5>
+            <input type="button" onclick="saveGrade()" class="collapsible" style="text-indent:20px" value="Test 1"></input>
+                <div class="content">
+                <p style="margin-left:20px" id="score3">Grade: </p>
+                </div>
+        </div>
+    </div>
 
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+
+        for (let i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
+        }
+        </script>
+    </div>
   <!-- Footer Start -->
   <footer class="footer-area" style="margin-top: -10%;">
     <div class="main-footer">
@@ -185,8 +121,8 @@
           <div class="col-lg-4 col-md-6">
             <div class="single-widget pr-60">
               <div class="footer-logo pb-25">
-                <a href="../index.html">
-                  <img src="../images/logo.png" alt="Learn4Life">
+                <a href="index.html">
+                  <img src="images/logo.png" alt="Learn4Life">
                 </a>
               </div>
               <p>This is a one-stop learning platform for all your learning needs. With integrated online lessons,
@@ -199,10 +135,10 @@
               <h3>information</h3>
               <ul>
                 <li>
-                  <a href="../index.html">About Us</a>
+                  <a href="index.html">About Us</a>
                 </li>
                 <li>
-                  <a href="../contact/index.html">Contact Us</a>
+                  <a href="contact/index.html">Contact Us</a>
                 </li>
                 <li>
                   <a href="https://github.com/aaboodza/Homework-Heroes.git">Github repo</a>
@@ -221,19 +157,19 @@
               <h3>useful links</h3>
               <ul>
                 <li>
-                  <a href="../courses/index.html">Browse Courses</a>
+                  <a href="courses/index.html">Browse Courses</a>
                 </li>
                 <li>
-                  <a href="../profile/index.html">Account</a>
+                  <a href="profile/index.html">Account</a>
                 </li>
                 <li>
                   <a href="#">Grades</a>
                 </li>
                 <li>
-                  <a href="../virtual/index.html">Virtual Classroom</a>
+                  <a href="virtual/index.html">Virtual Classroom</a>
                 </li>
                 <li>
-                  <a href="../profile/index.html">Calendar</a>
+                  <a href="profile/index.html">Calendar</a>
                 </li>
               </ul>
             </div>
@@ -242,9 +178,9 @@
             <div class="single-widget">
               <h3>Contact us</h3>
               <p style="font-weight: bold;">Lassonde School of Engineering <br>
-                <br>LAS C, York University, Keele Campus
+                <br>LAS C, York University Keele Campus
               </p>
-              <p>aaboodza@my.yorku.ca <br>vnic@my.yorku.ca <br>shizlet1@my.yorku.ca </p>
+              <p>aaboodza@my.yorku.ca <br>vnic@my.yorku.ca <br>shizlet1@my.yorku.caa </p>
             </div>
           </div>
         </div>
@@ -253,12 +189,12 @@
     <div class="footer-bottom text-center">
       <div class="container">
         <p>Copyright © 2022, <a href="index.html"></a>
-          <a href="../index.html" target="_blank">Homework Heroes</a>
+          <a href="index.html" target="_blank">Homework Heroes</a>
         </p>
       </div>
     </div>
   </footer>
-  
+  <!-- Footer End -->
 </body>
 
 </html>

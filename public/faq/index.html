@@ -29,6 +29,48 @@
       margin-right: calc(-.5 * var(--bs-gutter-x));
       margin-left: calc(-.5 * var(--bs-gutter-x));
     }
+    .collapsible {
+        background-color: white;
+        color: #73c007;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+      }
+
+      .collapsible:hover {
+        background-color: lightgray;
+      }
+
+      .active,
+      .collapsible:hover {
+        border-bottom: none;
+      }
+
+      .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: white;
+      }
+
+      .collapsible:after {
+        content: '\002b';
+        color: #73c007;
+        font-size: 20px;
+        float: right;
+        margin-left: 5px;
+      }
+
+      .active:after {
+        content: "\2212";
+      }
   </style>
 
 </head>
@@ -63,7 +105,7 @@
         <div class="w3-dropdown-content w3-card-4 w3-bar-block w3-hover-white:hover"
           style="width:300px; margin-top: 3.702%;">
           <a href="../courses/index.html" class="w3-bar-item w3-button">BROWSE COURSES</a>
-          <a href="#" class="w3-bar-item w3-button">GRADES</a>
+          <a href="../gradebook/index.html" class="w3-bar-item w3-button">GRADES</a>
         </div>
       </div>
       <a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
@@ -129,52 +171,6 @@
         });
       }
     </script>
-
-    <style>
-      .collapsible {
-        background-color: white;
-        color: #73c007;
-        font-weight: bold;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-        border-top: 1px solid lightgray;
-        border-bottom: 1px solid lightgray;
-      }
-
-      .collapsible:hover {
-        background-color: lightgray;
-      }
-
-      .active,
-      .collapsible:hover {
-        border-bottom: none;
-      }
-
-      .content {
-        padding: 0 18px;
-        display: none;
-        overflow: hidden;
-        background-color: white;
-      }
-
-      .collapsible:after {
-        content: '\002b';
-        color: #73c007;
-        font-size: 20px;
-        float: right;
-        margin-left: 5px;
-      }
-
-      .active:after {
-        content: "\2212";
-      }
-    </style>
-
   </div>
 
   <!-- Footer Start -->
