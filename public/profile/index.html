@@ -5,14 +5,18 @@
   <title>Project | Phase 3</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
+
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/responsive.css">
-  <script src="index.js"></script>
+
+  <script src="../functions.js"></script>
+
   <style>
     .w3-white {
       color: #000 !important;
@@ -27,7 +31,7 @@
 </head>
 
 <body class="w3-theme-l5">
-  <!-- Navbar -->
+
   <!-- Navbar -->
   <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
     <a href="../index.html" class="w3-bar-item">
@@ -63,20 +67,17 @@
         title="HOME"> HOME </a>
     </a>
   </div>
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
-  </div>
-  <!-- Page Container -->
+
+  <!-- Container -->
   <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+
     <!-- The Grid -->
     <div class="w3-row">
+
       <!-- Left Column -->
       <div class="w3-col m3">
-        <!-- Profile -->
+
+        <!-- Profile Start -->
         <div class="w3-card w3-round w3-white">
           <div class="w3-container" style="background-color: #fff;">
             <p class="w3-center">
@@ -97,6 +98,7 @@
           </div>
         </div>
         <br>
+
         <!-- Accordion -->
         <div class="w3-card w3-round">
           <div class="w3-white">
@@ -120,8 +122,8 @@
           </div>
         </div>
         <br>
-        <!-- End Left Column -->
       </div>
+
       <!-- Middle Column -->
       <div class="w3-col m7">
         <div class="w3-container w3-card w3-white w3-round w3-margin">
@@ -147,8 +149,8 @@
           <hr class="w3-clear">
           <p style="text-align: center;">Progress that will help you best measure performance and work completion</p>
         </div>
-        <!-- End Middle Column -->
       </div>
+
       <!-- Right Column -->
       <div class="w3-col m2">
         <div class="w3-card w3-round w3-white w3-center">
@@ -166,19 +168,18 @@
           </div>
         </div>
         <br>
-        <!-- End Right Column -->
       </div>
-      <!-- End Grid -->
     </div>
-    <!-- End Page Container -->
   </div>
   <br>
+
   <!-- Footer -->
   <footer class="w3-container w3-theme-d3 w3-padding-16" style="margin-top: 5%;">
     <br>
     <br>
     <br>
   </footer>
+
   <!-- Footer Start -->
   <footer class="footer-area" style="margin-top: -10%;">
     <div class="main-footer">
@@ -260,29 +261,7 @@
       </div>
     </div>
   </footer>
-  <!-- Footer End -->
-  <script>
-    // Accordion
-    function myFunction(id) {
-      var x = document.getElementById(id);
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-        x.previousElementSibling.className += " w3-theme-d1";
-      } else {
-        x.className = x.className.replace("w3-show", "");
-        x.previousElementSibling.className = x.previousElementSibling.className.replace(" w3-theme-d1", "");
-      }
-    }
-    // Used to toggle the menu on smaller screens when clicking on the menu button
-    function openNav() {
-      var x = document.getElementById("navDemo");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else {
-        x.className = x.className.replace(" w3-show", "");
-      }
-    }
-  </script>
+  
 </body>
 
 </html>
