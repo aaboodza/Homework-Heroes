@@ -23,6 +23,17 @@ function returnScore() {
 	}
 }
 
+//Convert grade book to PDF
+function convertToPDF() {
+	var report = document.getElementById('gradesList').innerHTML;
+	var win = window.open('', '', 'height=700,width=700');
+	win.document.write('<title>Grade Report</title>');   
+	win.document.write(report);         
+
+	win.document.close(); 	
+	win.print();    
+}
+
 // Accordion
 function myFunction(id) {
 	var x = document.getElementById(id);

@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="style.css">
 
   <script src="index.js"></script>
-  <script src="grade.js"></script>
+  <script src="../functions.js"></script>
   <script src="../courses/css/tests/index.js"></script>
   <script src="../courses/html/tests/index.js"></script>
   <script src="../courses/javascript/tests/index.js"></script>
@@ -73,24 +73,24 @@
       <br>
       <span class="w3-xlarge">You can download your official transcript here<br>
         <br>
-        <button onclick="" class="convert">Download PDF</button><br>
+        <button onclick="convertToPDF()" class="convert">Download PDF</button><br>
         <br>
     </p>
     <br>
     <div style= "height: 320px; overflow-y: scroll;">
-        <div class="grade-list" >
+        <div class="grade-list" id="gradesList">
         <h5>HTML</h5>
-            <input type="button" onclick="saveGrade()" class="collapsible" style="text-indent:20px" value="Test 1"></input>
+            <input type="button" onclick="null" class="collapsible" style="text-indent:20px" value="Test 1"></input>
                 <div class="content">
                 <p style="margin-left:20px" id="score1">Grade: </p>
                 </div>
         <h5>CSS</h5>
-            <input type="button" onclick="saveGrade()" class="collapsible" style="text-indent:20px" value="Test 1"></input>
+            <input type="button" onclick="null" class="collapsible" style="text-indent:20px" value="Test 1"></input>
                 <div class="content">
                 <p style="margin-left:20px" id="score2">Grade: </p>
                 </div>
         <h5>JAVASCRIPT</h5>
-            <input type="button" onclick="saveGrade()" class="collapsible" style="text-indent:20px" value="Test 1"></input>
+            <input type="button" onclick="null" class="collapsible" style="text-indent:20px" value="Test 1"></input>
                 <div class="content">
                 <p style="margin-left:20px" id="score3">Grade: </p>
                 </div>
