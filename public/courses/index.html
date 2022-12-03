@@ -2,256 +2,222 @@
 <html>
 
 <head>
-    <title>Learn4Life | Contact Us</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <style>
-        a:hover {
-            color: #73c007 !important;
-            text-decoration: none;
-        }
+  <title>Learn4Life | Browse Courses</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        .single-widget p {
-            color: #fff;
-        }
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
 
-        .single-widget h3,
-        a {
-            color: #fff;
-        }
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        .single-widget h3::after {
-            background: #ffffff none repeat scroll 0 0;
-        }
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
 
-        .single-widget h3::before {
-            background: #ffffff none repeat scroll 0 0;
-        }
+  <style>
+    .row {
+      margin-top: -10% !important;
+      padding: 15%;
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 0;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: calc(-1 * var(--bs-gutter-y));
+      margin-right: calc(-.5 * var(--bs-gutter-x));
+      margin-left: calc(-.5 * var(--bs-gutter-x));
+    }
+  </style>
 
-        .footer-bottom {
-            background-color: #000000;
-        }
-    </style>
 </head>
 
 <body class="w3-theme-l5">
-    <!-- Navbar -->
-    <!-- Navbar -->
-    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
-        <a href="../index.html" class="w3-bar-item">
-            <img src="../images/logo.png" style=" max-height:45px !important;" alt="Logo">
-        </a>
-        <a href="../profile/index.html"
-            class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
-            <img src="https://www.w3schools.com/w3images/avatar2.png" class="w3-circle"
-                style="height:40px;width:40px; margin-top: -9px;" alt="Avatar">
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2"
-                href="javascript:void(0);" onclick="openNav()">
-                <i class="fa fa-bars"></i>
-            </a>
-            <a href="../faq/index.html"
-                class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="FAQ"> FAQ
-            </a>
-            <a href="../contact/index.html"
-                class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="CONTACT">
-                CONTACT </a>
-            <a href="../virtual/index.html"
-                class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="CONTACT">
-                VIRTUAL TOUR </a>
-            <div class="w3-dropdown-hover w3-right">
-                <a href="#"
-                    class=".w3-white, .w3-hover-white:hover w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white w3-dropdown-hover w3-hide-small"
-                    title="COURSES"> COURSES </a>
-                <div class="w3-dropdown-content w3-card-4 w3-bar-block w3-hover-white:hover"
-                    style="width:300px; margin-top: 3.702%;">
-                    <a href="../courses/index.html" class="w3-bar-item w3-button">BROWSE COURSES</a>
-                    <a href="#" class="w3-bar-item w3-button">GRADES</a>
-                </div>
-            </div>
-            <a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
-                title="HOME"> HOME </a>
-        </a>
-    </div>
-    <!-- Navbar mobile -->
-    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
-    </div>
-    <!-- google-map-area start -->
-    <div class="map-area">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92195.1096145189!2d-79.53234127343845!3d43.77084161507619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2e2fab5e6c7f%3A0xe5d41e092a2199cf!2sLassonde%20School%20of%20Engineering!5e0!3m2!1sen!2sca!4v1669961002468!5m2!1sen!2sca"
-            width="1903" height="440" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <!-- Contact Start -->
-    <div class="contact-area pt-150 pb-140">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-5">
-                    <div class="contact-contents text-center">
-                        <div class="single-contact mb-65">
-                            <div class="contact-icon">
-                                <img src="../images/contact/contact1.png" alt="contact">
-                            </div>
-                            <div class="contact-add">
-                                <h3>address</h3>
-                                <p>Lassonde School of Engineering</p>
-                                <p>LAS C, York University Keele Campus</p>
-                            </div>
-                        </div>
-                        <div class="single-contact mb-65">
-                            <div class="contact-icon">
-                                <img src="../images/contact/contact2.png" alt="contact">
-                            </div>
-                            <div class="contact-add">
-                                <h3>Contacts</h3>
-                                <p>aaboodza@my.yorku.ca</p>
-                                <p>vnic@my.yorku.ca</p>
-                                <p>shizlet1@my.yorku.ca</p>
-                            </div>
-                        </div>
-                        <div class="single-contact">
-                            <div class="contact-icon">
-                                <img src="../images/contact/contact3.png" alt="contact">
-                            </div>
-                            <div class="contact-add">
-                                <h3>GitHub</h3>
-                                <a href="https://github.com/aaboodza/Homework-Heroes.git"
-                                    style="color: black;">https://github.com/aaboodza/Homework-Heroes.git</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-md-7">
-                    <div class="reply-area">
-                        <h3 style="margin-left: 5%;">LEAVE A message</h3>
-                        <p style="margin-left: 5%;">Let us help you </p>
-                        <br>
-                        <br>
-                        <form id="contact-form" action="https://whizthemes.com/mail-php/other/mail.php">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p>Name</p>
-                                    <input type="text" name="con_name">
-                                </div>
-                                <div class="col-md-12">
-                                    <p>Email</p>
-                                    <input type="text" name="con_email">
-                                </div>
-                                <div class="col-md-12">
-                                    <p>Subject</p>
-                                    <input type="text" name="con_subject">
-                                    <p>Massage</p>
-                                    <textarea name="con_message" cols="15" rows="10"></textarea>
-                                </div>
-                                <button class="reply-btn" type="submit" style="margin-left: 2%; width: 95%;">
-                                    <span>send message</span>
-                                </button>
-                            </div>
-                            <p class="form-message"></p>
-                        </form>
-                    </div>
-                </div>
-            </div>
+
+  <!-- Navbar -->
+  <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+    <a href="../index.html" class="w3-bar-item">
+      <img src="../images/logo.png" style=" max-height:45px !important;" alt="Logo">
+    </a>
+    <a href="../profile/index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
+      title="My Account">
+      <img src="https://www.w3schools.com/w3images/avatar2.png" class="w3-circle"
+        style="height:40px;width:40px; margin-top: -9px;" alt="Avatar">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2"
+        href="javascript:void(0);" onclick="openNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="../faq/index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
+        title="FAQ"> FAQ </a>
+      <a href="../contact/index.html"
+        class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="CONTACT"> CONTACT
+      </a>
+      <a href="../virtual/index.html"
+        class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="CONTACT"> VIRTUAL
+        TOUR </a>
+      <div class="w3-dropdown-hover w3-right">
+        <a href="#"
+          class=".w3-white, .w3-hover-white:hover w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white w3-dropdown-hover w3-hide-small"
+          title="COURSES"> COURSES </a>
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block w3-hover-white:hover"
+          style="width:300px; margin-top: 3.702%;">
+          <a href="../courses/index.html" class="w3-bar-item w3-button">BROWSE COURSES</a>
+          <a href="#" class="w3-bar-item w3-button">GRADES</a>
         </div>
+      </div>
+      <a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
+        title="HOME"> HOME </a>
+    </a>
+  </div>
+
+  <!-- Courses -->
+  <div class="row">
+    <h1 class="w3-xxxlarge w3-text-green" style="text-align:center">
+      <b>Browse Courses</b>
+    </h1>
+    <br>
+    <p style="text-align:center">
+      <br>
+      <span class="w3-xlarge">Here you can see the list of all availabe course to enroll <br>
+        <br>
+    </p>
+    <br>
+    <div class="col-lg-4 col-md-6">
+      <div class="single-course mb-70">
+        <div class="course-img">
+          <a href="course-details.html">
+            <img src="../images/html.jpg" alt="course">
+          </a>
+        </div>
+        <div class="course-content">
+          <h3>
+            <a href="../courses/html/lessons/index.html" style="color: black">HTML</a>
+          </h3>
+          <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be
+            displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting
+            languages such as JavaScript</p>
+          <a class="default-btn" href="../courses/html/lessons/index.html">Enroll Now</a>
+        </div>
+      </div>
     </div>
-    <!-- Contact End -->
-    <!-- Footer Start -->
-    <footer class="footer-area" style="margin-top: -10%;">
-        <div class="main-footer">
-            <div class="container">
-                <div class="row2">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-widget pr-60">
-                            <div class="footer-logo pb-25">
-                                <a href="../index.html">
-                                    <img src="../images/logo.png" alt="Learn4Life">
-                                </a>
-                            </div>
-                            <p>This is a one-stop learning platform for all your learning needs. With integrated online
-                                lessons, quizzes/tests, and instant feedback, and other materials, there is an abundance
-                                of information readily available at your fingertips, all for free! You will be well
-                                prepared.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-widget">
-                            <h3>information</h3>
-                            <ul>
-                                <li>
-                                    <a href="../index.html">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="../contact/index.html">Contact Us</a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/aaboodza/Homework-Heroes.git">Github repo</a>
-                                </li>
-                                <li>
-                                    <a href="#">Watch Our Video</a>
-                                </li>
-                                <li>
-                                    <a href="#">Documentation</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 pt-4 pt-lg-0">
-                        <div class="single-widget">
-                            <h3>useful links</h3>
-                            <ul>
-                                <li>
-                                    <a href="../courses/index.html">Browse Courses</a>
-                                </li>
-                                <li>
-                                    <a href="../profile/index.html">Account</a>
-                                </li>
-                                <li>
-                                    <a href="#">Grades</a>
-                                </li>
-                                <li>
-                                    <a href="../virtual/index.html">Virtual Classroom</a>
-                                </li>
-                                <li>
-                                    <a href="../profile/index.html">Calendar</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 pt-4 pt-lg-0">
-                        <div class="single-widget">
-                            <h3>Contact us</h3>
-                            <p style="font-weight: bold;">Lassonde School of Engineering <br>
-                                <br>LAS C, York University Keele Campus
-                            </p>
-                            <p>aaboodza@my.yorku.ca <br>vnic@my.yorku.ca <br>shizlet1@my.yorku.caa </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="single-course mb-70">
+        <div class="course-img">
+          <a href="course-details.html">
+            <img src="../images/css.jpg" alt="course">
+          </a>
         </div>
-        <div class="footer-bottom text-center">
-            <div class="container">
-                <p>Copyright © 2022, <a href="index.html"></a>
-                    <a href="../index.html" target="_blank">Homework Heroes</a>
-                </p>
-            </div>
+        <div class="course-content">
+          <h3>
+            <a href="../courses/css/lessons/index.html" style="color: black">CSS</a>
+          </h3>
+          <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written
+            in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside
+            HTML and JavaScript</p>
+          <a class="default-btn" href="../courses/css/lessons/index.html">Enroll Now</a>
         </div>
-    </footer>
-    <!-- Footer End -->
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="single-course mb-70">
+        <div class="course-img">
+          <a href="course-details.html">
+            <img src="../images/javascript.jpg" alt="course">
+          </a>
+        </div>
+        <div class="course-content">
+          <h3>
+            <a href="../courses/javascript/lessons/index.html" style="color: black">JavaScript</a>
+          </h3>
+          <p>JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the
+            World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for
+            webpage behavior</p>
+          <a class="default-btn" href="../courses/javascript/lessons/index.html">Enroll Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Start -->
+  <footer class="footer-area" style="margin-top: -10%;">
+    <div class="main-footer">
+      <div class="container">
+        <div class="row2">
+          <div class="col-lg-4 col-md-6">
+            <div class="single-widget pr-60">
+              <div class="footer-logo pb-25">
+                <a href="../index.html">
+                  <img src="../images/logo.png" alt="Learn4Life">
+                </a>
+              </div>
+              <p>This is a one-stop learning platform for all your learning needs. With integrated online lessons,
+                quizzes/tests, and instant feedback, and other materials, there is an abundance of information readily
+                available at your fingertips, all for free! You will be well prepared.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-widget">
+              <h3>information</h3>
+              <ul>
+                <li>
+                  <a href="../index.html">About Us</a>
+                </li>
+                <li>
+                  <a href="../contact/index.html">Contact Us</a>
+                </li>
+                <li>
+                  <a href="https://github.com/aaboodza/Homework-Heroes.git">Github repo</a>
+                </li>
+                <li>
+                  <a href="#">Watch Our Video</a>
+                </li>
+                <li>
+                  <a href="#">Documentation</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 pt-4 pt-lg-0">
+            <div class="single-widget">
+              <h3>useful links</h3>
+              <ul>
+                <li>
+                  <a href="../courses/index.html">Browse Courses</a>
+                </li>
+                <li>
+                  <a href="../profile/index.html">Account</a>
+                </li>
+                <li>
+                  <a href="#">Grades</a>
+                </li>
+                <li>
+                  <a href="../virtual/index.html">Virtual Classroom</a>
+                </li>
+                <li>
+                  <a href="../profile/index.html">Calendar</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pt-4 pt-lg-0">
+            <div class="single-widget">
+              <h3>Contact us</h3>
+              <p style="font-weight: bold;">Lassonde School of Engineering <br>
+                <br>LAS C, York University, Keele Campus
+              </p>
+              <p>aaboodza@my.yorku.ca <br>vnic@my.yorku.ca <br>shizlet1@my.yorku.ca </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <div class="container">
+        <p>Copyright © 2022, <a href="index.html"></a>
+          <a href="../index.html" target="_blank">Homework Heroes</a>
+        </p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
