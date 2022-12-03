@@ -9,12 +9,12 @@ function getCheckedValue(radioName) {
 }
 
 function dateAndTime() {
-	outputObj = document.getElementByID("date");
-	const d = getDate();
-	dayMonth = d.getDate();
+	outputObj = document.getElementById("date");
 	var input = parseInt(prompt("What day of the month is your assignment due?: "));
-	var newDay = dayMonth - input;
-	outputObj.innerHTML= "Your assignment is due " + newDay + "days from now.";
+    	const d = new Date();
+    	var dayMonth = d.getDate();
+    	const newDay = (input - dayMonth);
+	outputObj.innerHTML= "Your assignment is due " + newDay + " days from now.";
 }
 
 function getScore() {
