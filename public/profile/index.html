@@ -2,22 +2,29 @@
 <html>
 
 <head>
-  <title>Project | Phase 3</title>
+  <title>Project | Account</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
-
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/style.css">
-
   <script src="../functions.js"></script>
-
   <style>
+    li {
+      list-style-type: none;
+    }
+
+    a {
+      color: #000;
+    }
+
+    a:hover {
+      color: #73c007;
+    }
+
     .w3-white {
       color: #000 !important;
       background-color: #fff !important;
@@ -27,12 +34,27 @@
       color: #fff !important;
       background-color: #391775 !important;
     }
-  </style>
 
+    .row:not([class*="g-0"]) {
+      --bs-gutter-x: 25% !important;
+    }
+
+    .row {
+      margin-left: calc(1 * var(--bs-gutter-x));
+      padding: 0px;
+    }
+
+    .col-lg-8 {
+      width: 100%;
+    }
+
+    .w3-col.m3 {
+      margin-top: 1.4%;
+    }
+  </style>
 </head>
 
 <body class="w3-theme-l5">
-
   <!-- Navbar -->
   <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
     <a href="../index.html" class="w3-bar-item">
@@ -68,17 +90,12 @@
         title="HOME"> HOME </a>
     </a>
   </div>
-
   <!-- Container -->
   <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
-
     <!-- The Grid -->
-
     <div class="w3-row">
-
       <!-- Left Column -->
-      <div class="w3-col m3">
-
+      <div id="transcript" class="w3-col m3" style="position:sticky; top: 2%;">
         <!-- Profile Start -->
         <div class="w3-card w3-round w3-white">
           <div class="w3-container" style="background-color: #fff;">
@@ -89,86 +106,290 @@
             </p>
             <hr>
             <p>
-              <i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Student, YorkU
+            <div style="text-align: center;">
+              <button class="default-btn" onclick="editName();" class="w3-button w3-block w3-theme-l4">Edit
+                Info</button>
+            </div>
             </p>
-            <p>
-              <i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Tronto, CA
+            <p id="name1" style="font-weight: bold;">
+              <i class="fa fa-user fa-fw w3-margin-right w3-text-theme"></i>Name : -----
             </p>
-            <p>
-              <i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> NULL
+            <p id="name2" style="font-weight: bold;">
+              <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-text-theme"></i>University : -----
             </p>
+            <hr class="w3-clear">
+            <br>
+            <h4 style="text-align: center; font-weight: bold;">Progress</h4>
+            <p style="text-align: center;">Press Completed button at the end of each lesson and take the Final test to
+              complete</p>
+            <br>
+            <p style="font-weight: bold;">HTML</p>
+            <div class="w3-light-grey">
+              <div id="htmlBartext" class="w3-container w3-orange w3-center" style="width:0%">0%</div>
+            </div>
+            <br>
+            <p style="font-weight: bold;">CSS</p>
+            <div class="w3-light-grey">
+              <div id="cssBartext" class="w3-container w3-blue w3-center" style="width:0%">0%</div>
+            </div>
+            <br>
+            <p style="font-weight: bold;">JavaScript</p>
+            <div class="w3-light-grey">
+              <div id="jsBartext" class="w3-container w3-yellow" style="width:0%">0%</div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <h4 style="text-align: center; font-weight: bold;">Grades</h4>
+            <br>
+            <p style="text-align: center; font-weight: bold;" id="score1">* You must take the test first</p>
+            <br>
+            <div style="text-align: center">
+              <button class="default-btn" onclick="convertToPDF()" class="convert">Download as PDF</button>
+              <br>
+              <br>
+              <p style="text-align: center;">Download your official transcript here</p>
+            </div>
           </div>
+          <br>
+          <br>
         </div>
-        <br>
-
-        <!-- Accordion -->
-        <div class="w3-card w3-round">
-          <div class="w3-white">
-            <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align">
-              <i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Courses </button>
-            <div id="Demo1" class="w3-hide w3-container">
-              <p>Some text..</p>
-            </div>
-            <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align">
-              <i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Calendar </button>
-            <div id="Demo2" class="w3-hide w3-container">
-              <p>Some other text..</p>
-            </div>
-            <a href="../gradebook/index.html" class="w3-button w3-block w3-theme-l1 w3-left-align">
-              <i class="fa fa-users fa-fw w3-margin-right"></i> My Grades </a>
-            <div id="Demo3" class="w3-hide w3-container">
-              <div class="w3-row-padding">
-                <br>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br>
       </div>
-
+      <br>
       <!-- Middle Column -->
       <div class="w3-col m7">
         <div class="w3-container w3-card w3-white w3-round w3-margin">
           <br>
-          <h4 style="text-align: center;">Progress</h4>
-          <p style="text-align: center;">Progress tracker in the form of a scale ranging from 0-100 % completion</p>
-          <br>
-          <p>HTML</p>
-          <div class="w3-light-grey">
-            <div class="w3-container w3-orange w3-center" style="width:25%">25%</div>
+          <div class="col-lg-8">
+            <div class="courses-details">
+              <br>
+              <h1 id="lesson1" style="text-align: center; color: #000 !important;">Lesson 1: Introduction</h1>
+              <br>
+              <iframe
+                src="https://www.w3docs.com/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf#toolbar=0"
+                width="100%" height="500px"></iframe>
+              <br>
+              <br>
+              <div class="course-details-content">
+                <div>
+                  <h2>Description</h2>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                  into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                  release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                  software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                <p>
+                <br>
+                <div style="text-align: center;">
+                  <button class="default-btn" onclick="htmlBar();"
+                    class="w3-button w3-block w3-theme-l4">Completed</button>
+                </div>
+                </p>
+                <br>
+                <hr>
+                <br>
+                <br>
+                <h1 id="lesson2" style="text-align: center;">Lesson 2: Hello World!</h1>
+                <br>
+                <iframe width="692" height="389" src="https://www.youtube.com/embed/6vJOOhjt3aw?start=82"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                <div class="course-details-content">
+                  <br>
+                  <h2>Description</h2>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                  <div style="text-align: center;">
+                <p>
+                  <br>
+                <div style="text-align: center;">
+                  <button class="default-btn" onclick="cssBar();" class="w3-button w3-block w3-theme-l4">Completed</button>
+                </div>
+                </p>
+                  </div>
+                  <br>
+                  <br>
+                </div>
+              </div>
+              <hr>
+              <br>
+              <h1 id="finalTest" style="text-align: center; font-weight: bold;">Final Test</h1>
+              <br>
+              <br>
+              <br>
+              <li>
+                <h4>How many letters are there in "JS"?</h4>
+                <ul class="choices" style="font-size: 26px">
+                  <li>
+                    <label>
+                      <input type="radio" name="question0" value="A" />
+                      <span>2</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="question0" value="B" />
+                      <span>1</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="question0" value="C" />
+                      <span>3</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="question0" value="D" />
+                      <span>4</span>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h4>How many letters are there in "BMX"?</h4>
+                <ul class="choices" style="font-size: 26px">
+                  <li>
+                    <label>
+                      <input type="radio" name="question1" value="A" />
+                      <span>2</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="question1" value="B" />
+                      <span>1</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="question1" value="C" />
+                      <span>3</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="question1" value="D" />
+                      <span>4</span>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <br>
+                <h4>How many letters are there in "A"?</h4>
+                <ul class="choices" style="font-size: 26px;">
+                  <li>
+                    <label>
+                      <input type="radio" name="question2" value="A" />
+                      <span>2</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="question2" value="B" />
+                      <span>1</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="question2" value="C" />
+                      <span>3</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="question2" value="D" />
+                      <span>4</span>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              </ul>
+              <div style=" text-align: center;">
+                <button class="default-btn" style="margin-top: 3%; margin-bottom: 5%;"
+                  onclick="returnScore(); barComp();">Submit</button>
+              </div>
+            </div>
           </div>
-          <br>
-          <p>CSS</p>
-          <div class="w3-light-grey">
-            <div class="w3-container w3-blue w3-center" style="width:50%">50%</div>
-          </div>
-          <br>
-          <p>JavaScript</p>
-          <div class="w3-light-grey">
-            <div class="w3-container w3-yellow" style="width:75%">75%</div>
-          </div>
-          <br>
-          <hr class="w3-clear">
-          <p style="text-align: center;">Progress that will help you best measure performance and work completion</p>
         </div>
       </div>
-      
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        for (let i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+      </script>
       <!-- Right Column -->
-      <div class="w3-col m2">
+      <div class="w3-col m2" style="position:sticky; top: 2%;">
         <div class="w3-card w3-round w3-white w3-center">
           <div class="w3-container">
             <br>
+            <h4 style="text-align: center; font-weight: bold;">Calendar</h4>
+            <br>
             <img src="https://img.freepik.com/free-vector/calendar-icon-white-background_1308-84634.jpg" alt="Calendar"
               style="width:100%;">
-            <div id="calendar">
-              <p><strong>Phase 3 Submission</strong></p>
-            </div>
-            <div id="date">
-              <p> </p>
-            </div>
+            <br>
+            <p id="taskTitle" style="font-size: 16px; font-weight: bold;">Task : ---- </p>
+            <p id="date" style="font-size: 16px; font-weight: bold;">Remaining time : ----</p>
             <p>
-              <button onclick="dateAndTime();" class="w3-button w3-block w3-theme-l4">Info</button>
+              <button class="default-btn" onclick="dateAndTime();" class="w3-button w3-block w3-theme-l4">Add
+                reminder</button>
             </p>
+          </div>
+        </div>
+        <br>
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container">
+            <div class="blog-sidebar right">
+              <div class="single-blog-widget mb-50">
+                <br>
+                <h3 class="single-post-content" style="font-weight: bold;">Lessons</h3>
+                <div class="single-widget">
+                  <ul>
+                    <li>
+                      <a href="#lesson1">👉 Lesson 1: Introduction</a>
+                    </li>
+                  </ul>
+                </div>
+                <p>
+                  <a href="#lesson2">👉 Lesson 2: Hello World</a>
+                </p>
+              </div>
+              <div class="single-blog-widget mb-50">
+                <h3 style="font-weight: bold">Test</h3>
+                <br>
+                <div class="single-post mb-30">
+                  <div class="single-post-img">
+                    <a href="#finalTest">
+                      <img src="https://cdn-icons-png.flaticon.com/512/1205/1205526.png" alt="post"
+                        style="height: 42px; width:42px;">
+                    </a>
+                  </div>
+                  <div class="single-post-content">
+                    <br>
+                    <p style="font-weight: bold">
+                      <a class="default-btn" style="color: #fff;" href="#finalTest">Take the test</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <br>
@@ -176,14 +397,12 @@
     </div>
   </div>
   <br>
-
   <!-- Footer -->
   <footer class="w3-container w3-theme-d3 w3-padding-16" style="margin-top: 5%;">
     <br>
     <br>
     <br>
   </footer>
-
   <!-- Footer Start -->
   <footer class="footer-area" style="margin-top: -10%;">
     <div class="main-footer">
@@ -206,19 +425,19 @@
               <h3>information</h3>
               <ul>
                 <li>
-                  <a href="../index.html">About Us</a>
+                  <a style="color: #fff;" href="../index.html">About Us</a>
                 </li>
                 <li>
-                  <a href="../contact/index.html">Contact Us</a>
+                  <a style="color: #fff;" href="../contact/index.html">Contact Us</a>
                 </li>
                 <li>
-                  <a href="https://github.com/aaboodza/Homework-Heroes.git">Github repo</a>
+                  <a style="color: #fff;" href="https://github.com/aaboodza/Homework-Heroes.git">Github repo</a>
                 </li>
                 <li>
-                  <a href="#">Watch Our Video</a>
+                  <a style="color: #fff;" href="#">Watch Our Video</a>
                 </li>
                 <li>
-                  <a href="#">Documentation</a>
+                  <a style="color: #fff;" href="#">Documentation</a>
                 </li>
               </ul>
             </div>
@@ -228,19 +447,19 @@
               <h3>useful links</h3>
               <ul>
                 <li>
-                  <a href="../courses/index.html">Browse Courses</a>
+                  <a style="color: #fff;" href="../courses/index.html">Browse Courses</a>
                 </li>
                 <li>
-                  <a href="../profile/index.html">Account</a>
+                  <a style="color: #fff;" href="../profile/index.html">Account</a>
                 </li>
                 <li>
-                  <a href="../gradebook/index.html">Grades</a>
+                  <a style="color: #fff;" href="../gradebook/index.html">Grades</a>
                 </li>
                 <li>
-                  <a href="../virtual/index.html">Virtual Classroom</a>
+                  <a style="color: #fff;" href="../virtual/index.html">Virtual Classroom</a>
                 </li>
                 <li>
-                  <a href="../profile/index.html">Calendar</a>
+                  <a style="color: #fff;" href="../profile/index.html">Calendar</a>
                 </li>
               </ul>
             </div>
@@ -265,7 +484,6 @@
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>
