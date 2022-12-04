@@ -21,6 +21,7 @@ function dateAndTime() {
 	outputObj2.innerHTML= "Task : " + input2;
 }
 
+//geting the grade from the test
 function getScore() {
 	var score = 0;
 	for (var i = 0; i < tot; i++)
@@ -28,6 +29,7 @@ function getScore() {
 	return score;
 }
 
+//returning the test grade to the Grades section
 function returnScore() {
 	document.getElementById("score1").innerHTML =
 		"Your grade is : " + (getScore() * 100 / tot).toFixed(0) + "%";
@@ -95,6 +97,7 @@ function cssBar() {
 	outputObj.innerHTML= "50%";
 }
 
+//Function for completing ALL progress bars
 function barComp() {
     document.getElementById("htmlBartext").style.width="100%"; 
 	outputObj = document.getElementById("htmlBartext");
