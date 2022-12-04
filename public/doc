@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Learn4Life | Documentation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../functions.js"></script>
+</head>
+
+<body class="w3-theme-l5">
+  <!-- Container -->
+  <div class="w3-container w3-content" style="max-width:1400px;margin-top:60px">
+    <!-- The Grid -->
+    <div class="w3-row">
+      <!-- Left Column -->
+      <div id="transcript" class="w3-col m3" style="position:sticky; top: 2%;">
+        <!-- Profile Start -->
+        <div class="w3-card w3-round w3-white">
+          <div class="w3-container" style="background-color: #fff;">
+            <p class="w3-center">
+              <br>
+              <img src="https://learn4life.aoxow.xyz/public/images/logo.png"
+                style="margin-top: -5%; height:72px; width:100%;" alt="Logo">
+            </p>
+            <hr>
+            <h4 style="text-align: center; font-weight: bold;">Quick Access</h4>
+            <p>
+              <a href="#lesson1">Local Server</a>
+            </p>
+            <p>
+              <a href="https://learn4life.aoxow.xyz/public/index.html">Live Server <img
+                  src="https://thumbs.gfycat.com/ApprehensiveMagnificentKakarikis-size_restricted.gif"
+                  style="margin-left: 1%; height: 20px; width: 20px">
+              </a>
+            </p>
+            <br>
+            <hr>
+            <h4 style="text-align: center; font-weight: bold;">Documentation</h4>
+            <p>
+              <a href="#lesson1">Installation</a>
+            </p>
+            <p>
+              <a href="#lesson">Project Phase 1</a>
+            </p>
+            <p>
+              <a href="#lesson2">Project Phase 2</a>
+            </p>
+            <p>
+              <a href="#lesson3">Project Phase 3</a>
+            </p>
+            <p>
+              <a href="#lesson4">References</a>
+            </p>
+            <br>
+            <hr>
+            <br>
+            <p>Copyright © 2022, <a href="index.html"></a>
+              <a href="../index.html" target="_blank">Homework Heroes</a>
+            </p>
+          </div>
+          <br>
+          <br>
+        </div>
+      </div>
+      <br>
+      <!-- Middle Column -->
+      <div class="w3-col m7" style="margin-top: -3%;">
+        <div class="w3-container w3-card w3-white w3-round w3-margin">
+          <br>
+          <div class="col-lg-8">
+            <div class="courses-details">
+              <br>
+              <h1 id="lesson1" style="text-align: center; color: #000 !important;">Installion</h1>
+              <br>
+              <p>1. In order to set up and test a Node/Express locally on your system, you will first have to install
+                Nodejs and the Node Package Manager (npm) on your operating system.</p>
+              <p>2. You can start the server by calling node with the script in your command prompt:</p>
+              <p style="font-weight: bold;">node index.js</p>
+              <p>3. Open Browser and type in <a href="http://localhost:3000">http://localhost:3000</a> to run it locally
+                or user our <a href="https://learn4life.aoxow.xyz/public/index.html">Live server</a>
+              </p>
+              <p>4. To stop the server, type ctrl + c in the terminal:</p>
+              <p>
+                <img src="https://learn4life.aoxow.xyz/public/images/installation.png"
+                  style="height: 50%; width: 100%;">
+              </p>
+              <br>
+              <hr>
+              <br>
+              <h1 id="lesson1" style="text-align: center; color: #000 !important;">Documentation</h1>
+              <br>
+              <br>
+              <div class="course-details-content">
+                <div>
+                  <h2 id="lesson">Phase 1 : Requirements Definition</h2>
+                </div>
+                <p>In this phase, we described the project in further details – in a simple yet organized way.</p>
+                <br>
+                <iframe src="https://learn4life.aoxow.xyz/1_HWHEROES3.pdf" width="100%" height="500px"></iframe>
+                <hr>
+                <h2 id="lesson2">Phase 2 : Design</h2>
+                <p>In this phase, we used wireframes to show the design of our interface: and predicted how each page at
+                  frontend (client side) will look like (content and functionality) and how they will interact with one
+                  another (navigation).</p>
+                <br>
+                <iframe src="https://learn4life.aoxow.xyz/2_HWHEROES3.pdf" width="100%" height="500px"></iframe>
+                <br>
+                <br>
+                <h1 id="lesson3" style="text-align: left; color: #000 !important;">Phase 3 : Implementation and Testing
+                </h1>
+                <p>In this phase, we implemented the client side (functions.js) as well as the backend (index.js) of our
+                  project using the HTML, CSS, JavaScript, Node.js, jQuery. Our implementation is based on our design
+                  phase with some slight changes and it is tested using Mocha.js and Chai.js.</p>
+                <br>
+                <p>
+                  <img src="https://learn4life.aoxow.xyz/public/images/demo.png" style="height: 50%; width: 100%;">
+                </p>
+                <br>
+                <hr>
+                <h1 id="lesson2" style="text-align: left;">Phase 4. Demonstration</h1>
+                <br>
+                <iframe width="692" height="389" src="https://www.youtube.com/embed/6vJOOhjt3aw?start=82"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                <div class="course-details-content">
+                  <br>
+                  <h2>Description</h2>
+                  <p>In this phase, we will develop one single 2–3-minute video to show our learning process both in
+                    EECS1012 as well as in this project based on what we recorded in previous phases, as well as
+                    demonstration of our final product.</p>
+                    <br>
+                    <hr>
+                    <h1 id="lesson4" style="text-align: left; font-size: 38px;">References</h1>
+                    <br>
+                    <p>In this project, we used only W3 school css library</p>
+                    <p>FontAwesome css library</p>
+
+                  <br>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        for (let i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+      </script>
+      <!-- Right Column -->
+      <div class="w3-col m2" style="position:sticky; top: 2%;margin-top: -1.8%;">
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container" style=" margin-right: 10px !important;">
+            <br>
+            <h4 style="text-align: center; font-weight: bold; font-size: 25px;">Team Members</h4>
+            <hr>
+            <p id="taskTitle" style="font-size: 16px; font-weight: bold;">Alireza Aboodzadeh Berimi</p>
+            <a id="date" style="font-size: 12px; font-weight: bold;"
+              href="mailto: abc@example.com">aaboodza@my.yorku.ca</a>
+            <br>
+            <br>
+            <p id="taskTitle" style="font-size: 16px; font-weight: bold;">Nicole Van</p>
+            <a id="date" style="font-size: 12px; font-weight: bold;"
+              href="mailto: vnic@my.yorku.ca">vnic@my.yorku.ca</a>
+            <br>
+            <br>
+            <p id="taskTitle" style="font-size: 16px; font-weight: bold;">Shiza Shaikh</p>
+            <a id="date" style="font-size: 12px; font-weight: bold;"
+              href="mailto: shizlet1@my.yorku.ca">shizlet1@my.yorku.ca</a>
+            <br>
+            <br>
+            <br>
+          </div>
+        </div>
+        <br>
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container">
+            <div class="blog-sidebar right">
+              <div class="single-blog-widget mb-50">
+                <br>
+                <h3 style="font-weight: bold">GitHub repo:</h3>
+                <hr>
+                <div class="single-post mb-30">
+                  <div class="single-post-img" style="margin-bottom: -10%;">
+                    <a href="https://github.com/aaboodza/Homework-Heroes">
+                      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="post"
+                        style="height: 72px; width:72px;">
+                    </a>
+                  </div>
+                  <div class="single-post-content">
+                    <br>
+                    <p style="font-weight: bold">
+                      <a class="default-btn" style="color: #fff;" href="#finalTest">Take the test</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- Footer -->
+  <footer class="w3-container w3-theme-d3 w3-padding-16" style="margin-top: 5%;"></footer>
+  <!-- Footer Start -->
+</body>
+
+</html>
