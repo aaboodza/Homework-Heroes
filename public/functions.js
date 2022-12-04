@@ -25,7 +25,7 @@ function getScore() {
 }
 
 function returnScore() {
-	document.getElementById("myresults").innerHTML =
+	document.getElementById("score1").innerHTML =
 		"Your grade is : " + (getScore() * 100 / tot).toFixed(0) + "%";
 	if (getScore() > 2) {
 		console.log("Bravo");
@@ -34,7 +34,7 @@ function returnScore() {
 
 //Convert grade book to PDF
 function convertToPDF() {
-	var report = document.getElementById('gradesList').innerHTML;
+	var report = document.getElementById('score1').innerHTML;
 	var win = window.open('', '', 'height=700,width=700');
 	win.document.write('<title>Grade Report</title>');   
 	win.document.write(report);         
