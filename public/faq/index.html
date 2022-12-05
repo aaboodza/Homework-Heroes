@@ -11,7 +11,7 @@
 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/style.css">
 
@@ -29,50 +29,50 @@
       margin-right: calc(-.5 * var(--bs-gutter-x));
       margin-left: calc(-.5 * var(--bs-gutter-x));
     }
+
     .collapsible {
-        background-color: white;
-        color: #73c007;
-        font-weight: bold;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-        border-top: 1px solid lightgray;
-        border-bottom: 1px solid lightgray;
-      }
+      background-color: white;
+      color: #73c007;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      border-top: 1px solid lightgray;
+      border-bottom: 1px solid lightgray;
+    }
 
-      .collapsible:hover {
-        background-color: lightgray;
-      }
+    .collapsible:hover {
+      background-color: lightgray;
+    }
 
-      .active,
-      .collapsible:hover {
-        border-bottom: none;
-      }
+    .active,
+    .collapsible:hover {
+      border-bottom: none;
+    }
 
-      .content {
-        padding: 0 18px;
-        display: none;
-        overflow: hidden;
-        background-color: white;
-      }
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: white;
+    }
 
-      .collapsible:after {
-        content: '\002b';
-        color: #73c007;
-        font-size: 20px;
-        float: right;
-        margin-left: 5px;
-      }
+    .collapsible:after {
+      content: '\002b';
+      color: #73c007;
+      font-size: 20px;
+      float: right;
+      margin-left: 5px;
+    }
 
-      .active:after {
-        content: "\2212";
-      }
+    .active:after {
+      content: "\2212";
+    }
   </style>
-
 </head>
 
 <body class="w3-theme-l5">
@@ -90,11 +90,13 @@
         href="javascript:void(0);" onclick="openNav()">
         <i class="fa fa-bars"></i>
       </a>
-      <a href="../faq/index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
-        title="FAQ"> FAQ </a>
+      <a href="../doc/index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
+        title="FAQ"> DOCUMENTATION </a>
       <a href="../contact/index.html"
         class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="CONTACT"> CONTACT
       </a>
+      <a href="../faq/index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
+        title="FAQ"> FAQ </a>
       <a href="../virtual/index.html"
         class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="CONTACT"> VIRTUAL
         TOUR </a>
@@ -105,7 +107,7 @@
         <div class="w3-dropdown-content w3-card-4 w3-bar-block w3-hover-white:hover"
           style="width:300px; margin-top: 3.702%;">
           <a href="../courses/index.html" class="w3-bar-item w3-button">BROWSE COURSES</a>
-          <a href="../gradebook/index.html" class="w3-bar-item w3-button">GRADES</a>
+          <a href="../profile/index.html" class="w3-bar-item w3-button">LESSONS & TEST</a>
         </div>
       </div>
       <a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
@@ -127,35 +129,30 @@
     <br>
     <button type="button" class="collapsible">How much does each course cost to enroll into?</button>
     <div class="content">
-      <p>Our offered courses are completely free of charge. Enroll into the one you are interested in with
-        just one click of a button, and gain access to all our free lessons and assessments.
-      </p>
+      <p>Our offered courses are completely free of charge. Enroll into the one you are interested in with just one
+        click of a button, and gain access to all our free lessons and assessments. </p>
     </div>
     <button type="button" class="collapsible">Do I need any prior experience before I enroll into a course?</button>
     <div class="content">
-      <p>No prior experience is needed in any of our courses. All our lessons start with the basic 
-        fundamentals before gradually increasing in difficulty. Choose the lessons you are most
-        comfortable with, and test yourselves with the included assessments.
-      </p>
+      <p>No prior experience is needed in any of our courses. All our lessons start with the basic fundamentals before
+        gradually increasing in difficulty. Choose the lessons you are most comfortable with, and test yourselves with
+        the included assessments. </p>
     </div>
     <button type="button" class="collapsible">What type of courses are offered?</button>
     <div class="content">
-      <p>We are a one-stop learning platform for all your learning needs. We offer a variety
-        of programs from coding to biology, all with different learning outcomes. As of now, we provide
-        courses to the three main building blocks of the web, HTML, CSS, and JavaScript.
-      </p>
+      <p>We are a one-stop learning platform for all your learning needs. We offer a variety of programs from coding to
+        biology, all with different learning outcomes. As of now, we provide courses to the three main building blocks
+        of the web, HTML, CSS, and JavaScript. </p>
     </div>
     <button type="button" class="collapsible">Are there any certifications given after completing a course?</button>
     <div class="content">
-      <p>We do not give any certifications for completing a course, as all of our courses offered are
-        free of charge.
+      <p>We do not give any certifications for completing a course, as all of our courses offered are free of charge.
       </p>
     </div>
     <button type="button" class="collapsible">How long do I have to complete a course?</button>
     <div class="content">
-      <p>None of our courses have a deadline. Choose what time works best for you, and set your own
-        due dates with the built in calendar.
-      </p>
+      <p>None of our courses have a deadline. Choose what time works best for you, and set your own due dates with the
+        built in calendar. </p>
     </div>
 
     <!-- FAQs function -->
@@ -174,7 +171,7 @@
       }
     </script>
   </div>
-
+  
   <!-- Footer Start -->
   <footer class="footer-area" style="margin-top: -10%;">
     <div class="main-footer">
@@ -209,7 +206,7 @@
                   <a href="#">Watch Our Video</a>
                 </li>
                 <li>
-                  <a href="#">Documentation</a>
+                  <a href="../doc/index.html">Documentation</a>
                 </li>
               </ul>
             </div>
@@ -225,7 +222,7 @@
                   <a href="../profile/index.html">Account</a>
                 </li>
                 <li>
-                  <a href="#">Grades</a>
+                  <a href="../profile/index.html">Test & Grades</a>
                 </li>
                 <li>
                   <a href="../virtual/index.html">Virtual Classroom</a>
