@@ -11,15 +11,29 @@
 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+
   <link rel="stylesheet" href="css/style.css">
 
   <script src="../index.js"></script>
   <script src="functions.js"></script>
 
+  <style>
+    .testimonial-area:after {
+      display: none;
+    }
+
+    .notice-video::after {
+      display: none;
+    }
+
+    .testimonial-area {
+      position: unset;
+    }
+  </style>
 </head>
 
 <body class="w3-theme-l5">
-  
+
   <!-- Navbar -->
   <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
     <a href="index.html" class="w3-bar-item">
@@ -33,10 +47,12 @@
         href="javascript:void(0);" onclick="openNav()">
         <i class="fa fa-bars"></i>
       </a>
-      <a href="faq/index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
-        title="FAQ"> FAQ </a>
+      <a href="doc/index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
+        title="FAQ"> DOCUMENTATION </a>
       <a href="contact/index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
         title="CONTACT"> CONTACT </a>
+      <a href="faq/index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
+        title="FAQ"> FAQ </a>
       <a href="virtual/index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
         title="CONTACT"> VIRTUAL TOUR </a>
       <div class="w3-dropdown-hover w3-right">
@@ -46,7 +62,7 @@
         <div class="w3-dropdown-content w3-card-4 w3-bar-block w3-hover-white:hover"
           style="width:300px; margin-top: 3.702%;">
           <a href="courses/index.html" class="w3-bar-item w3-button">BROWSE COURSES</a>
-          <a href="gradebook/index.html" class="w3-bar-item w3-button">GRADES</a>
+          <a href="gradebook/index.html" class="w3-bar-item w3-button">LESSONS & TEST</a>
         </div>
       </div>
       <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
@@ -143,7 +159,8 @@
   </div>
 
   <!-- background Area -->
-  <div class="testimonial-area pt-110 pb-105 text-center">
+  <div class="testimonial-area pt-110 pb-105 text-center"
+    style="background-image: url('https://img.freepik.com/free-vector/education-horizontal-typography-banner-set-with-learning-knowledge-symbols-flat-illustration_1284-29493.jpg?w=2000');">
     <div class="container">
       <div class="row">
         <div class="testimonial-owl owl-theme owl-carousel">
@@ -167,9 +184,10 @@
         <div class="col-md-6">
           <div class="notice-right-wrapper mb-25 pb-25">
             <h3>TAKE A VIDEO TOUR</h3>
-            <div class="notice-video">
+            <div class="notice-video"
+              style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCLlVkmMP78jlNvj5kKrijnk62gYW8qAATvA&usqp=CAU');">
               <div class="video-icon video-hover">
-                <a class="video-popup" href="https://www.youtube.com/watch?v=fkoEj95puX0">
+                <a class="video-popup" href="doc/index.html">
                   <i class="zmdi zmdi-play"></i>
                 </a>
               </div>
@@ -178,7 +196,7 @@
         </div>
         <div class="col-md-6">
           <div class="notice-left-wrapper">
-            <h3>Main Features</h3>
+            <h3>Main Functions</h3>
             <div class="notice-left">
               <div class="single-notice-left mb-23 pb-20">
                 <h4>1. Online Lessons</h4>
@@ -197,14 +215,31 @@
                 <p>Virtual 360 implemented virtual tours as well as virtual classrooms</p>
               </div>
               <div class="single-notice-left hidden-sm mb-23 pb-20">
-                <h4>4, June 2022</h4>
-                <p>I must explain to you how all this mistaken idea of denouncing plasure and praising pain was born and
-                  I will give you a complete </p>
+                <h4>5. Progress bar</h4>
+                <p>Student progress tracker in the form of a scale ranging from 0%-100% completion</p>
               </div>
               <div class="single-notice-left pb-70">
-                <h4>3, June 2022</h4>
-                <p>I must explain to you how all this mistaken idea of denouncing plasure and praising pain was born and
-                  I will give you a complete </p>
+                <h4>6. Calnedar</h4>
+                <p>FAQ page that provides brief answers to possible questions about online learning</p>
+              </div>
+              <div class="single-notice-left pb-70">
+                <h4>7. FAQ</h4>
+                <p>FAQ page that provides brief answers to possible questions about online learning</p>
+              </div>
+              <div class="single-notice-left pb-70">
+                <br>
+                <h4>8. Contact</h4>
+                <p>FAQ page that provides brief answers to possible questions about online learning</p>
+              </div>
+              <div class="single-notice-left pb-70">
+                <br>
+                <h4>9. Embedd system</h4>
+                <p>A 3D Map embedded by iframe at google.com and a YouTube video embedded by iframe at youtube.com</p>
+              </div>
+              <div class="single-notice-left pb-70">
+                <br>
+                <h4>10. Node Express</h4>
+                <p>You can run this platform locally on your computer</p>
               </div>
             </div>
           </div>
@@ -212,7 +247,10 @@
       </div>
     </div>
   </section>
-
+  <br>
+  <br>
+  <br>
+  
   <!-- Footer Start -->
   <footer class="footer-area" style="margin-top: -10%;">
     <div class="main-footer">
@@ -247,7 +285,7 @@
                   <a href="#">Watch Our Video</a>
                 </li>
                 <li>
-                  <a href="#">Documentation</a>
+                  <a href="doc/index.html">Documentation</a>
                 </li>
               </ul>
             </div>
@@ -263,7 +301,7 @@
                   <a href="profile/index.html">Account</a>
                 </li>
                 <li>
-                  <a href="#">Grades</a>
+                  <a href="profile/index.html#finalTest">Test & Grades</a>
                 </li>
                 <li>
                   <a href="virtual/index.html">Virtual Classroom</a>
@@ -294,7 +332,6 @@
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>
